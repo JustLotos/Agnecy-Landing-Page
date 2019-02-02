@@ -1,0 +1,387 @@
+@pink: #ff3f40;
+@dark: #313030;
+@grey: #615f5f;
+@light_grey: #ececec;
+@bezh: #f5f0dd;
+.opReg{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+.opBold{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+}
+input:focus, button:focus, textarea:focus {
+	outline: none;
+}
+*{
+	
+	box-sizing: border-box;
+	font-size: 16px;
+}
+.header{
+	h2{
+		text-transform: uppercase;
+		font-size: 42px;
+		margin-bottom: 40px;
+		.opBold;
+	}
+	p{
+		margin-bottom: 40px;
+	}
+	span{
+		display: block;
+		height: 2px;
+		background-color: @pink;
+		width: 130px;
+	}
+}
+.nav{
+	height: 90px;
+	background-color: @dark;
+	margin-top: 30px;
+	&-list{
+		list-style-type: none;
+		display: flex;
+		justify-content: space-between;
+	}
+	&-element{
+		.opReg;
+		line-height: 74px;
+		text-transform: uppercase;
+		&:hover{
+			transition: 0.2s;
+			background-color: @pink;
+		}
+	}
+	&-link{
+		color: white;
+		&:hover{
+			color: white;
+		}
+	}
+}
+.fs{
+	position: relative;
+	background-color: #f6f2f2;
+	padding-bottom: 100px;
+	&-hover{
+		margin-top: 100px;
+	}
+	&-header{
+		.opBold;
+		color: black;
+		font-size: 60px;
+		text-transform: uppercase;
+	}
+	&-text{
+		margin-top: 40px;
+		margin-bottom: 60px;
+		color: @grey;
+	}
+	&-button{
+		cursor: pointer;
+		padding: 13px 60px;
+		border: none;
+		border-radius: 5px;
+		background-color:@pink;
+		font-size: 18px;
+		color: white;
+	}
+	&-player{
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 15px;
+		box-shadow: -2px -14px 73px rgba(0, 0, 0, 0.29);
+		background-color:  @dark;
+		span{
+			display: block;
+			background-image: url(../img/Vedio_Icon.png);
+		}
+	}
+}
+video {
+	width: 100%;
+	height: 100%;
+}
+.icons
+{
+	height: 100vh;
+	margin-bottom: 100px;
+	&-box{
+		flex-basis: 45%;
+		margin-right: 26px;
+		margin-bottom: 40px;
+	}
+	&-wrapper{
+		margin-top: 100px;
+	}
+	&-wrapperr{
+		margin-top: 100px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&-subtitle{
+		.opBold;
+		font-size: 22px;
+		text-transform: uppercase;
+		padding-bottom: 5px;
+	}
+	&-header{
+		.opBold;
+		font-size: 42px;
+		line-height: 1.4;
+		text-transform: uppercase;
+		padding-bottom: 40px;
+	}
+	&-text{
+		line-height: 28px;
+		padding-bottom: 40px;
+	}
+	&-button{
+		.opBold;
+		cursor: pointer;
+		border: 2px solid @pink;
+		color: @pink;
+		background-color: White;
+		padding: 13px 60px;
+		border-radius: 5px;
+	}
+	&-line{
+		display: block;
+		margin: 0 auto;
+		margin-top: 60px;
+		width: 90%;
+		height: 2px;
+		background-color: @light_grey;
+	}
+}
+.icon{
+	margin-bottom: 20px;
+}
+
+.products{
+	margin-top: 30px;
+	margin-bottom: 130px;
+	.header{
+		text-align: center;
+		h2{
+			margin-bottom: 20px;
+		}
+		p{
+			margin-bottom: 20px;
+		}
+		span{
+			width: 130px;
+			margin: 0 auto;
+		}	
+	}
+	&-list{
+		display: flex;
+		justify-content: space-between;
+		margin-top: 90px;
+		margin-bottom: 60px;
+	}
+	&-link{
+		color: @dark;
+		text-transform: uppercase;
+		&:hover{
+			transition: 0.2s;
+			color: @pink;
+			text-decoration: none;
+
+		}
+	}
+	&-img{
+		flex-basis: 15%;
+		margin: 12px 20px;
+		width: 260px;
+		height: 260px;
+		background-color: @bezh;
+	}
+
+}
+
+.team{
+	.header{
+		
+		margin-bottom: 70px;
+	}
+	&-avatar{
+		height: 400px;
+		background-color: @bezh;
+		margin-right: 60px;
+	}
+	&-descripton{
+		
+	}
+	&-name{
+		text-transform: uppercase;
+		margin-bottom: 40px;
+	}
+	&-character{
+		margin-bottom: 40px;
+	}
+	&-social{
+		display: flex;
+		
+		font-size: 18px;
+		li{
+			margin-right: 30px;
+		}
+		a{
+			color: @dark;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+	&-miniature{
+		margin-top: 50px;
+		display: flex;
+		justify-content: space-between;
+		
+		&-photo{
+			margin-right: 20px;
+			width: 160px;
+			height: 157px;
+			background-color: @bezh;
+		}
+	}
+}
+
+.subscribe{
+	margin-top: 100px;
+	padding: 150px 0;
+	background-color: @bezh;
+	text-align: center;
+	&-header{
+		.opBold;
+		text-transform: uppercase;
+		font-size-adjust: 42px;
+		color: white;
+		margin-bottom: 30px;
+	}
+	&-text{
+		color: white;
+		margin-bottom: 60px;
+	}
+	&-email{
+		width: 500px;
+		padding: 25px;
+		border: none;
+		border-radius: 5px;
+		margin-right: 20px;
+	}
+	&-btn{
+		cursor: pointer;
+		text-transform: uppercase;
+		font-size: 18px;;
+		color: white;
+		border: none;
+		border-radius: 5px;
+		background-color: @pink;
+		padding: 25px 50px;		
+	}
+}
+
+.send{
+	margin: 100px 0;
+	.header{
+		margin-bottom: 70px;
+		margin-left: 110px;
+	}
+	&-form{
+		margin-left: 110px;
+	}
+	&-name{
+		width: 45%;
+		padding: 15px 50px;
+		margin-right: 59px;
+		background-color: lighten(@grey,50%);
+		border-radius: 5px;
+		border: none;
+	}
+	&-email{
+		width: 45%;
+		padding: 15px 50px;
+		background-color: lighten(@grey,50%);
+		border-radius: 5px;
+		border: none;
+	}
+	&-message{
+		margin-top: 30px;
+		padding: 15px 50px;
+		background-color: lighten(@grey,50%);
+		border-radius: 5px;
+		border: none;
+		width: 100%;
+		height: 100px;
+		min-height: 100px;
+		max-height: 250px;
+	}
+	&-submit{
+		color: white;
+		.opBold;
+		font-size: 18px;
+		border: none;
+		border-radius: 5px;
+		background-color: @pink;
+		width: 100%;
+		margin-top: 30px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		cursor: pointer;
+				
+	}
+	&-contact{
+		background-color: @dark;
+		height: 100%;
+		margin-right: -15px;
+	}
+	&-info{
+		padding: 106px 70px;
+		color: white;
+	}
+	&-info_header{
+		text-transform: uppercase;
+		margin-bottom: 40px;
+	}
+	&-info_aderess{
+		margin-bottom: 30px;
+	}
+	&-info_email{
+		margin-bottom: 30px;
+	}
+}
+
+.footer{
+	background-color: @dark;
+	&-hover{
+		display: flex;
+		justify-content: space-between;
+	}
+	&-description{
+		color: white;
+		line-height: 100px;
+		margin: 8px;
+	}
+	&-social_list{
+		display: flex;
+		
+	}
+	&-social_elemen{
+		line-height: 100px;
+		font-size: 26px;
+		margin-right: 30px;
+	}
+	&-link{
+		color: white;
+		:hover{
+			transition: 0.3s;
+			color: @pink;
+		}
+	}
+}
